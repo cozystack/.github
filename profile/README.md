@@ -4,6 +4,6 @@ Cozy Stack is a space where we can work together to build something truly valuab
 
 Join my [Cozy Dev Corner on Discord](https://discord.gg/QaCTXq2Gxm), check out the [official RFCs](https://github.com/orgs/cozydev-labs/discussions/categories/official-rfcs) or [make a proposal](https://github.com/orgs/cozydev-labs/discussions/categories/proposals) for a new feature.
 
-I also have a [public Cozy Auth roadmap](https://github.com/orgs/cozystack/projects/2/views/1).
+I also have a [public roadmap for Cozy Auth](https://github.com/orgs/cozystack/projects/2/views/1).
 
 Let's build something cozy, together! 🏠💕
