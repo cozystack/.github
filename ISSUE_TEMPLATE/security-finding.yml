@@ -1,0 +1,81 @@
+name: Security Finding
+description: Report an automated security scanner finding (for maintainers)
+title: "[security] "
+labels: ["security/triage-needed"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **This template is for automated scanner findings reviewed by maintainers.**
+        If you are an external reporter, please use [Private Vulnerability Reporting](https://github.com/cozystack/cozystack/security/advisories/new) instead.
+  - type: input
+    id: cve
+    attributes:
+      label: CVE ID
+      placeholder: CVE-YYYY-NNNNN
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      options:
+        - Critical
+        - High
+        - Medium
+        - Low
+    validations:
+      required: true
+  - type: input
+    id: package
+    attributes:
+      label: Affected package
+      placeholder: "e.g., libcrypto3, stdlib, redis"
+    validations:
+      required: true
+  - type: input
+    id: installed_version
+    attributes:
+      label: Installed version
+      placeholder: "e.g., 3.5.1-r0"
+  - type: input
+    id: fixed_version
+    attributes:
+      label: Fixed version
+      placeholder: "e.g., 3.5.5-r0 (or 'none available')"
+  - type: textarea
+    id: affected_components
+    attributes:
+      label: Affected Cozystack components
+      placeholder: |
+        - packages/system/velero
+        - packages/apps/postgres
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      placeholder: Brief description of the vulnerability and its impact
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: References
+      placeholder: |
+        - https://nvd.nist.gov/vuln/detail/CVE-YYYY-NNNNN
+        - https://github.com/advisories/GHSA-XXXX
+  - type: dropdown
+    id: triage_status
+    attributes:
+      label: Triage status
+      options:
+        - new (needs triage)
+        - confirmed
+        - false-positive
+        - accepted-risk
+        - in-progress
+        - fixed
+    validations:
+      required: true
