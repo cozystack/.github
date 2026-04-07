@@ -7,7 +7,7 @@ body:
     attributes:
       value: |
         **This template is for automated scanner findings reviewed by maintainers.**
-        If you are an external reporter, please use [Private Vulnerability Reporting](https://github.com/cozystack/cozystack/security/advisories/new) instead.
+        If you are an external reporter, please use [Private Vulnerability Reporting](https://github.com/cozystack/cozystack/security/advisories/new) or email cncf-cozystack-security@lists.cncf.io instead.
   - type: input
     id: cve
     attributes:
