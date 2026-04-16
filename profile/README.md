@@ -2,7 +2,7 @@
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/cozystack/cozystack/blob/master/LICENSE)
 [![latest-release](https://img.shields.io/github/release/cozystack/cozystack.svg)](https://github.com/cozystack/cozystack/releases)
 
-# Cozystack: Free and open-source PaaS framework and platform for building clouds
+# Cozystack: Free and open-source platform for building clouds
 
 Transform a set of bare metal servers into an intelligent system with a simple REST API for spawning Kubernetes clusters,
 Databases-as-a-Service, virtual machines, load balancers, HTTP caching services, and other services with ease.
