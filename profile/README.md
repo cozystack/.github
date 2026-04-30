@@ -38,4 +38,4 @@ Cozystack is licensed under the [Apache License, Version 2.0](https://github.com
 
 Cozystack was originally built and sponsored by [Ænix](https://aenix.io/).
 
-<img src="https://aenix.io/wp-content/uploads/2023/12/AEnix_gradient_arrows5.png" width="250" alt="Ænix logo">
+<img src="./aenix.png" width="250" alt="Ænix logo">
