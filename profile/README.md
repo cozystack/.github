@@ -10,7 +10,7 @@ Databases-as-a-Service, virtual machines, load balancers, HTTP caching services,
 Use Cozystack to build your own cloud or provide cost-effective development environments,
 including GPU support for running AI/ML workloads in Kubernetes clusters and VMs.
 
-Cozystack is a [CNCF Sandbox Level Project](https://www.cncf.io/sandbox-projects/ and a Kubernetes Certified PaaS.
+Cozystack is a [CNCF Sandbox Level Project](https://www.cncf.io/sandbox-projects/) and a Kubernetes Certified PaaS.
 You can find it on the [CNCF](https://landscape.cncf.io/?group=certified-partners-and-providers) 
 and [CNAI](https://landscape.cncf.io/?group=cnai) Landscapes.
 
