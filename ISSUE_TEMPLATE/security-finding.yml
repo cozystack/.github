@@ -1,6 +1,6 @@
 name: Security Finding
 description: Report an automated security scanner finding (for maintainers)
-title: "[security] "
+title: "[security] <package>: <vulnerability ID>"
 labels: ["security/triage-needed"]
 body:
   - type: markdown
@@ -9,12 +9,26 @@ body:
         **This template is for automated scanner findings reviewed by maintainers.**
         If you are an external reporter, please use [Private Vulnerability Reporting](https://github.com/cozystack/cozystack/security/advisories/new) or email cncf-cozystack-security@lists.cncf.io instead.
   - type: input
-    id: cve
+    id: vulnerability_id
     attributes:
-      label: CVE ID
-      placeholder: CVE-YYYY-NNNNN
+      label: Vulnerability ID
+      description: CVE where one is assigned, otherwise the GHSA or other advisory ID.
+      placeholder: "e.g., CVE-YYYY-NNNNN or GHSA-xxxx-xxxx-xxxx"
     validations:
       required: true
+  - type: input
+    id: scanner
+    attributes:
+      label: Scanner
+      placeholder: "e.g., Trivy, Grype, osv-scanner, Dependabot"
+    validations:
+      required: true
+  - type: input
+    id: finding_id
+    attributes:
+      label: Scanner finding ID
+      description: Rule ID, alert URL or other identifier the scanner gives this finding, if any. Used to match repeat reports of the same finding across scan runs.
+      placeholder: "e.g., https://github.com/cozystack/cozystack/security/code-scanning/123"
   - type: dropdown
     id: severity
     attributes:
